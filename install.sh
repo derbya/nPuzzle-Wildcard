@@ -24,9 +24,8 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 		python get-pip.py;
 		rm get-pip.py;
 	fi
-#	CFLAGS=-I$(brew --prefix)/include LDFLAGS=-L$(brew --prefix)/lib pip install random;
-#	CFLAGS=-I$(brew --prefix)/include LDFLAGS=-L$(brew --prefix)/lib pip install heapq;
 elif [[ "$unamestr" == 'WindowsNT' ]]; then
 	echo "You are on your own here";
 	echo "install python3 and pip";
+	echo "you may have to install modules as well";
 fi
