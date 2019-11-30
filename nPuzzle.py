@@ -326,6 +326,12 @@ def returnSolvedPuzzle(size):
     return tab
 
 def generateRandomPuzzle(size):
+    if size < 2:
+        print("Size must be greater than 2 when using the -r flag")
+        printUsage()
+        exit()
+    if size > 5:
+        print("Warning! Puzzles over size 5 may take a while!")
     puzzle = returnSolvedPuzzle(size)
     #randomMoveNumber = random.randint(0, 1000000)
     randomMoveNumber = 200
