@@ -22,6 +22,7 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 	if [ -z "$pipVersion" ]; then
 		curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py;
 		python get-pip.py;
+		rm get-pip.py;
 	fi
 #	CFLAGS=-I$(brew --prefix)/include LDFLAGS=-L$(brew --prefix)/lib pip install random;
 #	CFLAGS=-I$(brew --prefix)/include LDFLAGS=-L$(brew --prefix)/lib pip install heapq;
