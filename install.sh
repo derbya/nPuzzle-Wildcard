@@ -1,3 +1,5 @@
+#!/bin/sh
+
 platform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
